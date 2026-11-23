@@ -1,0 +1,22 @@
+[package]
+name = "splice-machines"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "MIT"
+description = "Evidence-gated staged replacement"
+repository = "https://github.com/seuros/splice_machines"
+readme = "README.md"
+categories = ["no-std"]
+exclude = [".github/", ".release-please-manifest.json", "release-please-config.json"]
+
+[dependencies]
+state-machines = { version = "0.36.1", default-features = false }
+
+[lints.rust]
+unsafe_code = "deny"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+nursery = "warn"
